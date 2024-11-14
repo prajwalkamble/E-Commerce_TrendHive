@@ -1,0 +1,134 @@
+.contactInfo {
+  width: 300px;
+  padding: 20px 20px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contactInfo div h3 {
+  margin: 6px 10px;
+}
+
+.contactInfo p {
+  margin: 14px 10px;
+}
+
+.contactInfo hr {
+  margin: 20px 10px;
+}
+
+.userInfo {
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 600px;
+}
+
+.userInfo div {
+  display: flex;
+  justify-content: center;
+}
+
+.userInfo div textarea {
+  margin: 10px 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  height: 180px;
+  width: 600px;
+}
+
+.userInfo div input {
+  border: none;
+  background-color: rgb(243, 243, 243);
+  padding: 10px 10px;
+  margin: 5px 10px;
+  width: 150px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contactContainer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactContainer div {
+  margin: 20px 20px;
+}
+
+/* border: 'none', borderRadius: '4px', backgroundColor: '#1F51FF', color: 'white', cursor: 'pointer'  */
+
+.userInfo div button {
+  border: none;
+  border-radius: 4px;
+  background: #1f51ff;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px 0px;
+}
+
+.userInfo div button:hover {
+  background: #a020f0;
+}
+
+.callus {
+  display: flex;
+  align-items: center;
+}
+
+.callicon {
+  background-color: #1f51ff;
+  padding: 6px;
+  height: 20px;
+  border-radius: 17px;
+}
+
+.mailus {
+  display: flex;
+  align-items: center;
+}
+
+.mailicon {
+  background-color: #1f51ff;
+  padding: 5px;
+  height: 19px;
+  width: 21px;
+  border-radius: 23px;
+}
+
+@media screen and (max-width: 700px) {
+  .userInfo div {
+    flex-direction: column;
+  }
+
+  .userInfo {
+    width: auto;
+    padding: 0;
+  }
+
+  .userInfo div input {
+    width: 250px;
+  }
+
+  .userInfo div textarea {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .userInfo div input {
+    width: 200px;
+  }
+
+  .userInfo div textarea {
+    width: 200px;
+  }
+}

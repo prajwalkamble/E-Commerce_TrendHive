@@ -1,0 +1,46 @@
+.footer_container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer_container div {
+  margin: 23px 42px;
+}
+
+.footer_container div h4 {
+  margin: 15px 0px;
+}
+
+.footer_container div p {
+  margin: 12px 0px;
+}
+
+.footer_container div a {
+  text-decoration: none;
+  color: white;
+}
+
+.main_footer_container {
+  background-color: black;
+  color: rgb(122, 122, 122);
+  text-align: center;
+}
+
+.email_input {
+  outline: none;
+  height: 22px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.email_input_div {
+  border-radius: 4px;
+  border: 1px solid white;
+}

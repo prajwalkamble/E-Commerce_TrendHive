@@ -1,0 +1,81 @@
+.checkout_info input {
+  border: none;
+  background-color: rgb(243, 243, 243);
+  outline: none;
+  margin-bottom: 20px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  width: 250px;
+}
+.astric {
+  color: red;
+  font-size: large;
+}
+
+.checkout_info {
+  margin: 20px 0px;
+}
+
+.checkout_info p {
+  font-size: 13px;
+}
+
+.checkout_info h1 {
+  margin: 10px 0px;
+}
+
+.checkout_total div {
+  margin: 10px 0px;
+}
+
+.checkout_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.checkout_total {
+  height: 500px;
+  width: 300px;
+  margin: 0px 100px;
+}
+
+.billing_item_name {
+  display: flex;
+  align-items: center;
+}
+
+.billing_item_name img {
+  height: 30px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.billing_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.billing_cost_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.billing_payment div input {
+  margin-right: 6px;
+}
+
+.coupon_code {
+  outline: none;
+  height: 34px;
+  padding: 0px 5px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .checkout_total {
+    margin: 0px 10px;
+  }
+}

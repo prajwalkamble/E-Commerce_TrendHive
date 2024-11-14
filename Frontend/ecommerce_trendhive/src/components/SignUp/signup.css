@@ -1,0 +1,83 @@
+.imageDiv {
+  margin: 0% 0%;
+}
+.imageDiv img {
+  height: 600px;
+  width: 650px;
+}
+
+.signup_container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+}
+
+.signupInputForm {
+  width: 270px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupInputForm input {
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 10px 0px;
+  outline: none;
+}
+
+.signupInputForm p a {
+  color: #1f51ff;
+}
+
+.signupInputForm p a:hover {
+  color: #a020f0;
+}
+
+.signupInputDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.google_signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  padding: 6px 0px;
+  margin: 10px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitbtn {
+  border: none;
+  background-color: #1f51ff;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 13px 30px;
+}
+
+.submitbtn:hover {
+  background: #a020f0;
+}
+
+@media screen and (max-width: 1000px) {
+  .signup_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageDiv img {
+    display: flex;
+    height: 300px;
+    width: 350px;
+  }
+
+  .signupInputDiv {
+    margin: 10px 0px;
+  }
+}
