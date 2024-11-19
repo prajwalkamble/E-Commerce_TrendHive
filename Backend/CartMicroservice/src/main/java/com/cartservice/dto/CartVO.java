@@ -3,6 +3,7 @@ package com.cartservice.dto;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,7 +12,6 @@ import lombok.Setter;
 @Setter
 public class CartVO {
 	private Long cartId;
-	private Long userId;
 	private Integer totalQuantity;
 	private BigDecimal totalPrice;
 	private String status;
@@ -21,9 +21,8 @@ public class CartVO {
   
   public CartVO() {}
   
-  public CartVO(Long cartId, Long userId, Integer totalQuantity, BigDecimal totalPrice, String status, Date createdDate, Date updatedDate, List<CartItemsVO> cartItemsVO) {
+  public CartVO(Long cartId, Integer totalQuantity, BigDecimal totalPrice, String status, Date createdDate, Date updatedDate, List<CartItemsVO> cartItemsVO) {
   	this.cartId = cartId;
-  	this.userId = userId;
   	this.totalQuantity = totalQuantity;
   	this.totalPrice = totalPrice;
   	this.status = status;
@@ -31,4 +30,30 @@ public class CartVO {
   	this.updatedDate = updatedDate;
   	this.cartItemsVO = cartItemsVO;
   }
+
+	@Override
+	public String toString() {
+		return "CartVO [cartId=" + cartId 
+				+ ", totalQuantity=" + totalQuantity 
+				+ ", totalPrice=" + totalPrice 
+				+ ", status=" + status 
+				+ ", createdDate=" + createdDate 
+				+ ", updatedDate=" + updatedDate 
+				+ ", cartItemsVO=" + cartItemsVO + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null || getClass() != obj.getClass())
+			return false;
+		CartVO other = (CartVO) obj;
+		return Objects.equals(cartId, other.cartId);
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(cartId);
+	}
 }

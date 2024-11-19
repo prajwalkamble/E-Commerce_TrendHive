@@ -2,7 +2,6 @@ CREATE SCHEMA ecommerce_trendhive;
 
 use ecommerce_trendhive;
 
-DROP TABLE products;
 -- Product Microservice 
 CREATE TABLE products (
 	productId BIGINT PRIMARY KEY AUTO_INCREMENT,
@@ -20,7 +19,6 @@ CREATE TABLE products (
 -- Cart Microservice
 CREATE TABLE cart (
 	cartId BIGINT PRIMARY KEY AUTO_INCREMENT,
-    userId BIGINT NOT NULL,
     totalQuantity INT NOT NULL,
     totalPrice DECIMAL(10, 2) NOT NULL,
     status VARCHAR(50),
@@ -31,6 +29,7 @@ CREATE TABLE cart (
 CREATE TABLE cartItems (
 	cartItemId BIGINT PRIMARY KEY AUTO_INCREMENT,
     cartId BIGINT NOT NULL,
+    userId BIGINT NOT NULL,
     productId BIGINT NOT NULL,
     quantity INT NOT NULL,
     cartItemPrice DECIMAL(10, 2) NOT NULL,

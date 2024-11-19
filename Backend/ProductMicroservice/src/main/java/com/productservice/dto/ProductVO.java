@@ -20,6 +20,13 @@ public class ProductVO {
 	private Date productUpdatedAt;
 	
 	public ProductVO() {}
+	
+	public ProductVO(Long productId, String productName, Double productPrice, String productCategory) {
+    this.productId = productId;
+    this.productName = productName;
+    this.productPrice = productPrice;
+    this.productCategory = productCategory;
+}
 
 	public ProductVO(Long productId, String productName, String productDescription, Double productPrice, String productCategory, String productBrand, String productSKU, String productStatus, Date productCreatedAt, Date productUpdatedAt) {
 		this.productId = productId;
@@ -33,6 +40,4 @@ public class ProductVO {
 		this.productCreatedAt = productCreatedAt;
 		this.productUpdatedAt = productUpdatedAt;
 	}
-	
-	
 }
